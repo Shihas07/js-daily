@@ -481,6 +481,39 @@
 
 
 
+// //  Q,  find the common elements
+
+
+//     function common(arr1,arr2,arr3){
+        
+//           const mergedArr=[...arr1,...arr2,...arr3]
+//           let result=[]
+
+//             for(let i=0;i<mergedArr.length;i++){
+//                for(let j=i+1;j<mergedArr.length-1;j++){
+//                     if(mergedArr[i]===mergedArr[j]&&!result.includes(mergedArr[i])){
+//                         result.push(mergedArr[i])
+//                     }
+//                }
+//             }
+//             return result
+          
+//     }
+
+//     const arr1=[1, 5, 10, 20, 40, 80]
+//     const arr2=[6, 7, 20, 80, 100]
+//     const arr3=[3, 4, 15, 20, 30, 70, 80, 120]
+
+//  const answer= common(arr1,arr2,arr3)
+//  console.log(answer)
+
+// answer is :[ 20, 80 ]
+
+
+
+
+
+
        
 
    
