@@ -57,12 +57,11 @@
 // const btn = document.getElementById("btn");
 // const promise = new Promise((resolve, reject) => {
 //   btn.addEventListener("click", () => {
-     
+
 //    reject("error");
 //     console.log(promise);
 //   });
 // });
-
 
 //    promise.then((data)=>{
 //       console.log(data)
@@ -70,37 +69,28 @@
 //    .catch((error)=>{
 //       console.log(error)
 //    })
-    
-
-   
 
 //
 
-
 //    function first(){
-      
+
 //      return new Promise((resolve,reject)=>{
 //       setTimeout(()=>{
-//             resolve("ok") 
+//             resolve("ok")
 //       },7000)
 //      })
 
-   
-    
-        
-        
 //    }
 //        function second(){
 //         return new Promise((resolve,reject)=>{
 //           setTimeout(()=>{
 //                 resolve("done")
 //                 return()
-              
+
 //           },1000)
 //   })
 //        }
 
-      
 //     first().then((data)=>console.log(data))
 //     .then((data)=>console.log(data))
 
@@ -108,17 +98,12 @@
 
 //    console.log("hello top level")
 
-       
 //    fs.readFile("text.txt","utf-8",()=>{
 //       console.log("hello fs ")
 // })
 
-    
-
 //       setImmediate(()=>console.log("immediate code"))
 //       setTimeout(()=>console.log("settimout code"),)
-
-
 
 //    const obj={
 //        name:"shihas"
@@ -128,40 +113,21 @@
 
 //    console.log(obj)
 
+// var a=10;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   // var a=10;
-
-
-   // const arr=[2,3,45]
+// const arr=[2,3,45]
 
 //    arr.shift()
-   // const b=arr.shift()
+// const b=arr.shift()
 
-   // console.log(b)
-
+// console.log(b)
 
 //    db.collection.find({id:""},{$in:[2]})
 
-   //  db.colection.find({},{$eq:1})
+//  db.colection.find({},{$eq:1})
 
-   //  db.collection.updateOne({rollno:1},{$set:{rollno:2}})
+//  db.collection.updateOne({rollno:1},{$set:{rollno:2}})
 
-    
 // const arr=[1,3,4,5]
 
 //  const h= arr.some((item,ind)=>{
@@ -171,9 +137,6 @@
 
 //     console.log(h)
 
-
-
-    
 //   const arr=[1,4,5,2,66]
 
 //   const sortedArrY= arr.sort((a,b)=>a-b)
@@ -184,27 +147,23 @@
 //       const u=  sortedArrY[result]
 //      console.log(u)
 
-
-
 // const arr=[1,4,5,2,,66,66]
 
-
 //   function secondLargest(arr){
-      
+
 //       let largest=0;
 //       let second=0;
-        
+
 //          for(let i=0;i<arr.length;i++){
 
 //                if(arr[i]>largest){
-                   
+
 //                     second=largest
 //                     largest=arr[i]
 //                }else if(arr[i]!=largest&&arr[i]>second){
-                       
+
 //                         second=arr[i]
 //                }
-
 
 //          }
 //           return second;
@@ -214,50 +173,36 @@
 
 //    console.log(h)
 
+//  const arr=[1,2,3,4,5,6,7]
 
+//    function rotate(arr,k){
 
+//         const size=arr.length
 
-     
+//              k=size%k
+//              console.log(k)
 
-        
+//               const splicedArray= arr.splice(size-k,size)
+//                 console.log(splicedArray)
+//               const result=arr.unshift(splicedArray)
 
+//               console.log(arr.flat());
+//               console.log(size);
 
-   //  const arr=[1,2,3,4,5,6,7]
+//    }
 
-   //    function rotate(arr,k){
-             
-   //         const size=arr.length   
-           
-   //              k=size%k
-   //              console.log(k)
-
-   //               const splicedArray= arr.splice(size-k,size)
-   //                 console.log(splicedArray)
-   //               const result=arr.unshift(splicedArray)
-
-   //               console.log(arr.flat());
-   //               console.log(size);
-                 
-
-   //    }
-
-
-   //    rotate(arr,2)  
-
-          
-
-
+//    rotate(arr,2)
 
 //   const arr=[1,1,1,2,3,4]
 // let result=[]
 //    let count=0
 //       for(let i=0;i<=arr.length;i++){
 //            if(arr[i]!==arr[i+1]){
-//                 result.push(arr[i])   
+//                 result.push(arr[i])
 //            }
 //            else{
 //             count++
-                
+
 //            }
 
 //       }
@@ -265,227 +210,185 @@
 //          console.log(count)
 //         console.log(result)
 
+// function removeDuplicate(arr){
 
+//      for(let i=0;i<arr.length-1;i++){
 
+//           if(arr[i]===arr[i+1])
+//           arr.splice(i+1,1)
 
- 
+//      }
+//        return arr.length
+// }
 
-   // function removeDuplicate(arr){
-       
-   //      for(let i=0;i<arr.length-1;i++){
+// const arr=[1,1,1,1,3,4,4,5,6]
 
-   //           if(arr[i]===arr[i+1])
-   //           arr.splice(i+1,1)
-                
-   //      }
-   //        return arr.length
-   // }
+//  console.log(removeDuplicate(arr))
 
-      
-   // const arr=[1,1,1,1,3,4,4,5,6]
+//   function removeDuplicate(arr){
 
-   //  console.log(removeDuplicate(arr)) 
+//         let i=0
+//          for(let j=1;i<arr.length;j++){
 
+//                 if(arr[i]!==arr[j]){
+//                      i++
+//                     arr[i]=arr[j]
+//                   //   console.log(arr[i])
+//                   // console.log(arr.length)
+//                   return
+//                 }
 
-   
+//          }
+//          return i+1
 
-   //   function removeDuplicate(arr){
-        
-   //         let i=0
-   //          for(let j=1;i<arr.length;j++){
-                 
-   //                 if(arr[i]!==arr[j]){
-   //                      i++
-   //                     arr[i]=arr[j]
-   //                   //   console.log(arr[i])
-   //                   // console.log(arr.length)
-   //                   return 
-   //                 }
+//   }
+//   const arr=[1,1,1,1,3,4,4,5,6]
+//  console.log( removeDuplicate(arr))
 
-                 
-                    
-                   
-   //          }
-   //          return i+1
-            
+// const arr=[1,-2,-3,-4,-5,6,-7,8]
 
-   //   }
-   //   const arr=[1,1,1,1,3,4,4,5,6]
-   //  console.log( removeDuplicate(arr))  
+//   function subArray(){
+//    let maxSum = arr[0];
+//    for(let i=0;i<arr.length;i++){
+//       let currentSum=0;
+//       for(let j=i;j<arr.length;j++){
+//           currentSum=currentSum+arr[j];
+//           if(currentSum>maxSum){
+//              maxSum=currentSum;
+//           }
 
+//       }
 
-   // const arr=[1,-2,-3,-4,-5,6,-7,8]
-  
-   //   function subArray(){
-   //    let maxSum = arr[0];
-   //    for(let i=0;i<arr.length;i++){
-   //       let currentSum=0;
-   //       for(let j=i;j<arr.length;j++){
-   //           currentSum=currentSum+arr[j];
-   //           if(currentSum>maxSum){
-   //              maxSum=currentSum;
-   //           }
+//   }
 
-   //       }
-       
-   //   }
+//    return maxSum
+//   }
 
-   //    return maxSum
-   //   }
+//    console.log(subArray(arr))
 
-   //    console.log(subArray(arr)) 
+// console.log("hi");
 
+// for (let i = 0; i < 10; i++) {
+//     setTimeout(() => {
+//         console.log(i);
+//     }, 5000  );
+// }
+// // console.log("hello")
+// const intervalId = setInterval(() => {
+//     console.log("hello");
+//     clearInterval(intervalId);  // Stop the interval after logging
+// }, 5000);
 
-   // console.log("hi");
+// var name="msnafn"
+//  const obj={
+//    name:"shihas",
+//     hi: ()=>{
+//        return this.name
+//     }
+//  }
 
-   // for (let i = 0; i < 10; i++) {
-   //     setTimeout(() => {
-   //         console.log(i);
-   //     }, 5000  );
-   // }
-   // // console.log("hello")
-   // const intervalId = setInterval(() => {
-   //     console.log("hello");
-   //     clearInterval(intervalId);  // Stop the interval after logging
-   // }, 5000);
-   
-   
-     
-        
+//     const second={
+//        name:"arjun"
+//     }
 
+//  console.log("jnjandjNDJNjdnJ",obj.hi.call(second))
 
-     
-   // var name="msnafn"
-   //  const obj={
-   //    name:"shihas",
-   //     hi: ()=>{
-   //        return this.name
-   //     }
-   //  }
+//   function memoize (fn){
+//    const cache={}
 
-   //     const second={
-   //        name:"arjun"
-   //     }
- 
-   //  console.log("jnjandjNDJNjdnJ",obj.hi.call(second)) 
+//    // console.log("ss'",cache)
+//      return function hi(...args){
 
+//          var result=JSON.stringify(args)
+//            console.log(result)
+//            if(cache[result]){
+//               return cache[result]
 
-        
-           
+//            }
+//             else{
+//                  const result=fn(...args)
+//                cache[result]=result;
+//                return result
+//             }
 
-   //   function memoize (fn){
-   //    const cache={}
-     
-   //    // console.log("ss'",cache) 
-   //      return function hi(...args){
-               
-   //          var result=JSON.stringify(args)
-   //            console.log(result)
-   //            if(cache[result]){
-   //               return cache[result]
+//      }
 
-   //            }
-   //             else{
-   //                  const result=fn(...args)
-   //                cache[result]=result;
-   //                return result
-   //             }
-              
-   //      }
-      
+//   }
 
-   //   }
-    
-   //    const final=   memoize(sum)
+//    const final=   memoize(sum)
 
-   //      final()
+//      final()
 
-   //   function sum(num1,num2){
+//   function sum(num1,num2){
 
-   //        for(let i=0;i<=2000;i++){}
-   //      return num1*num2
-   //   }
-      
-        
-       
+//        for(let i=0;i<=2000;i++){}
+//      return num1*num2
+//   }
 
-   //   console.time("hello")
-   // //   console.log(sum(1333,23333)) 
-   //     console.log(final(1,2))
-   //   console.timeEnd("hello")
+//   console.time("hello")
+// //   console.log(sum(1333,23333))
+//     console.log(final(1,2))
+//   console.timeEnd("hello")
 
+//   console.time("hi")
+// //   console.log(sum(1333,23333))
+// console.log(final(1,2))
 
-   //   console.time("hi")
-   // //   console.log(sum(1333,23333)) 
-   // console.log(final(1,2))
+//   console.timeEnd("hi")
 
-   
-   //   console.timeEnd("hi")
+//   function Occurence(str){
+//    // console.log(str)
 
+//    const string=  str.split("")
+//    // console.log(string)
 
+//      let result={}
 
-   //   function Occurence(str){
-   //    // console.log(str)
+//        for(let i=0;i<string.length;i++){
+//          const char = string[i];
+//          console.log(result[char])
+//             if(result[char]){
+//              result[char]++
 
-   //    const string=  str.split("")
-   //    // console.log(string)
+//             }
+//             else{
+//                result[char]=1
+//             }
 
-   //      let result={}
-        
-       
-   //        for(let i=0;i<string.length;i++){
-   //          const char = string[i];
-   //          console.log(result[char])
-   //             if(result[char]){
-   //              result[char]++
-                  
-   //             }
-   //             else{
-   //                result[char]=1
-   //             }
-               
-                
-   //        }
+//        }
 
-   //        return result
-         
-   //   }
-      
-   //  console.log(Occurence("Happy")) 
-  
+//        return result
 
+//   }
 
+//  console.log(Occurence("Happy"))
 
-      // const arr=[1,2,4,5,6]    
+// const arr=[1,2,4,5,6]
 
-      // const result=arr.map((val)=>val+2)
-      // console.log(arr)
-      // console.log(result)
+// const result=arr.map((val)=>val+2)
+// console.log(arr)
+// console.log(result)
 
-      // const arr=[1,2,4,5,6]  
+// const arr=[1,2,4,5,6]
 
-   //    // const result=arr.forEach((val)=>val+2)
-   //    //  console.log(arr)
-   //    // console.log(result)
+//    // const result=arr.forEach((val)=>val+2)
+//    //  console.log(arr)
+//    // console.log(result)
 
+//    function loops(){
 
-   //    function loops(){
-
-   //         for(let i=0;i<3;i++){
-   //            setTimeout(() => {
-   //              console.log(i)
-   //            }, i*1000);
-   //         }
-   //    }
-   //  loops()
-
-
+//         for(let i=0;i<3;i++){
+//            setTimeout(() => {
+//              console.log(i)
+//            }, i*1000);
+//         }
+//    }
+//  loops()
 
 // //  Q,  find the common elements
 
-
 //     function common(arr1,arr2,arr3){
-        
+
 //           const mergedArr=[...arr1,...arr2,...arr3]
 //           let result=[]
 
@@ -497,7 +400,7 @@
 //                }
 //             }
 //             return result
-          
+
 //     }
 
 //     const arr1=[1, 5, 10, 20, 40, 80]
@@ -509,11 +412,9 @@
 
 // answer is :[ 20, 80 ]
 
-
 // q,Write code that enhances all arrays such that you can call the array.last() method on any array and it will return the last element. If there are no elements in the array, it should return -1.
 
 // You may assume the array is the output of JSON.parse.
-
 
 // Array.prototype.last = function() {
 //    if(this.length>0){
@@ -529,12 +430,34 @@
  * arr.last(); // 3
  */
 
+// Write a program to check if a vowel is present in a Array of strings.
 
 
+// function Match(arr) {
+//   const vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
+  
+//   let result = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     // console.log( arr[i])
+//     let h = arr[i];
+//     let vowelss = false;
+//    //  console.log(h);
+//     for (let j = 0; j < vowels.length; j++) {
+//       if (h.includes(vowels[j])) {
+//         vowelss = true;
+//         break;
+//       }
 
+     
+//     }
+//     if (vowelss === false) {
+//       result.push(h);
+//     }
+//   }
 
-       
+//   return result;
+// }
 
-   
+// const a = ["My", "Hai", "Dry", "Are", "You", "cry", "Nail", "Rythm"];
 
-   
+// console.log(Match(a));
