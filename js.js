@@ -432,10 +432,9 @@
 
 // Write a program to check if a vowel is present in a Array of strings.
 
-
 // function Match(arr) {
 //   const vowels = ["A", "E", "I", "O", "U", "a", "e", "i", "o", "u"];
-  
+
 //   let result = [];
 //   for (let i = 0; i < arr.length; i++) {
 //     // console.log( arr[i])
@@ -448,7 +447,6 @@
 //         break;
 //       }
 
-     
 //     }
 //     if (vowelss === false) {
 //       result.push(h);
@@ -461,3 +459,26 @@
 // const a = ["My", "Hai", "Dry", "Are", "You", "cry", "Nail", "Rythm"];
 
 // console.log(Match(a));
+
+//reverse a string
+
+// These are just a starting point, and you can create variations or add more questions based on these:
+
+// Task: Reverse an Array
+
+// Input: [1, 2, 3, 4, 5]
+// Output: [5, 4, 3, 2, 1]
+
+// const reverse = (num) => {
+//   const result = num.sort((a, b) => b-a);
+//   return result
+// };
+// let Input = [1, 2, 3, 4, 5];
+
+// console.log(reverse(Input));
+
+
+
+// let Input = [1, 2, 3, 4, 5];
+
+
