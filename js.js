@@ -521,3 +521,33 @@
 //    }
     
 //    console.log(arr)
+
+
+// Task: Find the Maximum Element
+
+// Input: [3, 7, 2, 8, 1]
+// Output: 8
+
+
+//  const arr=[3, 7, 2, 8, 1]
+
+
+//   let i=0;
+  
+//   let max=arr[0]
+    
+//      while(i<arr.length){
+
+//            if(arr[i]>max){
+//             max=arr[i]
+//            }
+//            i++
+//      }
+
+     
+
+      
+
+//      console.log(max)
+
+      
