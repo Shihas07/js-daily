@@ -498,8 +498,26 @@
 // console.log(reverse(Input))
 
 
-let Input = [1, 2, 3, 4, 5];
+// let Input = [1, 2, 3, 4, 5];
 
- let result= Input.reverse()
+//  let result= Input.reverse()
 
- console.log(result)
+//  console.log(result)
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let i=0
+// let j=arr.length-1
+// let temp;
+
+//    while(i<j){
+
+//        temp =arr[j]
+//         arr[j]=arr[i];
+//         arr[i]=temp
+
+//          i++
+//          j--
+//    }
+    
+//    console.log(arr)
