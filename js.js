@@ -477,8 +477,6 @@
 
 // console.log(reverse(Input));
 
-
-
 // let Input = [1, 2, 3, 4, 5];
 
 // const reverse=(num)=>{
@@ -486,17 +484,16 @@
 //   let result=[]
 
 //    for(let i=num.length-1;i>0;i--){
-      
+
 //        result.push(num[i])
-        
+
 //    }
 
 //    return result
-    
+
 // }
 
 // console.log(reverse(Input))
-
 
 // let Input = [1, 2, 3, 4, 5];
 
@@ -519,23 +516,20 @@
 //          i++
 //          j--
 //    }
-    
-//    console.log(arr)
 
+//    console.log(arr)
 
 // Task: Find the Maximum Element
 
 // Input: [3, 7, 2, 8, 1]
 // Output: 8
 
-
 //  const arr=[3, 7, 2, 8, 1]
 
-
 //   let i=0;
-  
+
 //   let max=arr[0]
-    
+
 //      while(i<arr.length){
 
 //            if(arr[i]>max){
@@ -544,32 +538,51 @@
 //            i++
 //      }
 
-     
-
-      
-
 //      console.log(max)
-
-      
-
-
 
 // Task: Rotate an Array
 
 // Input: [1, 2, 3, 4, 5], 2
 // Output: [4, 5, 1, 2, 3]
 
+// const rotate = (arr, num) => {
+//   for (let i = 0; i < num; i++) {
+//     const result = arr.unshift(arr.pop());
+//   }
 
-     const rotate=(arr,num)=>{
-          
-                      for(let i=0;i<num;i++){
-                        const result=  arr.unshift(arr.pop())
-                      }
-     
+//   console.log(arr);
+//   //  return result
+// };
 
-       console.log(arr)
-      //  return result
-            
-     }
+// console.log(rotate([1, 2, 3, 4, 5], 2));
 
-     console.log(rotate([1, 2, 3, 4, 5], 2))
+
+// Task: Remove Duplicates
+
+// Input: [2, 4, 3, 2, 7, 4, 1]
+// Output: [2, 4, 3, 7, 1]
+
+
+// const RemoveDuplicates=(arr)=>{
+//     //  console.log(arr)
+//          for(let i=0;i<arr.length;i++)  {
+
+//             for(let j=i+1;j<=arr.length;j++){
+                
+//                  if(arr[i]===arr[j]){
+//                      arr.shift()
+                    
+//                  }
+//             }
+//          }    
+        
+//          return arr
+
+        
+// }
+
+
+//  console.log(RemoveDuplicates([2, 4, 3, 2, 7, 4, 1]))
+
+
+
