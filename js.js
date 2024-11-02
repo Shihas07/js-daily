@@ -556,33 +556,44 @@
 
 // console.log(rotate([1, 2, 3, 4, 5], 2));
 
-
 // Task: Remove Duplicates
 
 // Input: [2, 4, 3, 2, 7, 4, 1]
 // Output: [2, 4, 3, 7, 1]
-
 
 // const RemoveDuplicates=(arr)=>{
 //     //  console.log(arr)
 //          for(let i=0;i<arr.length;i++)  {
 
 //             for(let j=i+1;j<=arr.length;j++){
-                
+
 //                  if(arr[i]===arr[j]){
 //                      arr.shift()
-                    
+
 //                  }
 //             }
-//          }    
-        
+//          }
+
 //          return arr
 
-        
 // }
-
 
 //  console.log(RemoveDuplicates([2, 4, 3, 2, 7, 4, 1]))
 
+// Task: Two Sum
 
+// Input: [2, 7, 11, 15], 9
+// Output: [0, 1]
 
+// const twoSum = (arr, target) => {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[i] + arr[j] === target) {
+
+//            return [i,j]
+//       }
+//     }
+//     const element = arr[i];
+//   }
+// };
+// console.log(twoSum([2, 7, 11, 15], 9));
