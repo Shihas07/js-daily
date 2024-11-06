@@ -628,30 +628,45 @@
 
 // console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
+// const kadensSum = (arr) => {
+//   let subarr = [];
 
+//   let sum = arr[0];
 
+//   for (let i = 0; i < arr.length; i++) {
+//     let currentsum = 0;
+//     for (let j = i; j < arr.length; j++) {
+//       currentsum += arr[j];
+//       if (sum < currentsum) {
+//         sum = currentsum;
+//       }
+//     }
+
+//     console.log(subarr.length);
+//   }
+//   return sum;
+// };
+
+// console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
 const kadensSum = (arr) => {
-   let subarr = [];
-  
-   let sum = arr[0];
-  
-    for (let i = 0; i < arr.length; i++) {
-      let currentsum=0
-      for (let j = i; j < arr.length; j++) {
+  let maxSum = arr[0];
+  let sum = 0;
 
-              currentsum+=arr[j]
-              if(sum<currentsum){
-                sum=currentsum
-              }
-    
-      }
+  // let sum = arr[0];
 
-      
-     console.log(subarr.length);
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
 
+    if (maxSum < sum) {
+      maxSum = sum;
     }
-    return sum
-  }
 
-  console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+    if (sum < 0) {
+      sum = 0;
+    }
+  }
+  return maxSum;
+};
+
+console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
