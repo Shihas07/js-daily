@@ -634,18 +634,24 @@
 const kadensSum = (arr) => {
    let subarr = [];
   
-   let sum = 0;
+   let sum = arr[0];
   
     for (let i = 0; i < arr.length; i++) {
+      let currentsum=0
       for (let j = i; j < arr.length; j++) {
-       subarr.push(arr.slice(i, j));
+
+              currentsum+=arr[j]
+              if(sum<currentsum){
+                sum=currentsum
+              }
+    
       }
 
       
      console.log(subarr.length);
 
     }
-    return subarr
+    return sum
   }
 
   console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
