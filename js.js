@@ -649,24 +649,28 @@
 
 // console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
-const kadensSum = (arr) => {
-  let maxSum = arr[0];
-  let sum = 0;
+// const kadensSum = (arr) => {
+//   let maxSum = arr[0];
+//   let sum = 0;
 
-  // let sum = arr[0];
+//   // let sum = arr[0];
 
-  for (let i = 0; i < arr.length; i++) {
-    sum += arr[i];
+//   for (let i = 0; i < arr.length; i++) {
+//     sum += arr[i];
 
-    if (maxSum < sum) {
-      maxSum = sum;
-    }
+//     if (maxSum < sum) {
+//       maxSum = sum;
+//     }
 
-    if (sum < 0) {
-      sum = 0;
-    }
-  }
-  return maxSum;
-};
+//     if (sum < 0) {
+//       sum = 0;
+//     }
+//   }
+//   return maxSum;
+// };
 
-console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+// //time=o(n)  because the loop itreating only n length;
+// //space =o(1)  here we didint make any new array so we taking o(1)
+
+// console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
+
