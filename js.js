@@ -689,3 +689,21 @@
 //  }
  
 //  console.log(Upper("shihas"))
+
+
+
+//array [1,2,3,4]  n=1
+
+//output like [[1] [2] [3] [4]]
+
+
+const arrayFunc=(arr,n)=>{
+  let a=[]
+  
+  for(let i=0;i<arr.length;i++){
+      
+          a.push(arr.slice(i,i+n))
+  }
+  return a
+}
+console.log(arrayFunc([1,2,3,4],1))
