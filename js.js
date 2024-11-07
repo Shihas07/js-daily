@@ -674,3 +674,18 @@
 
 // console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
+
+
+// to upperCase one after one
+
+
+
+// const Upper=str=>{
+      
+//   const result=str.split("").map((a,b)=>b%2===0?a.toUpperCase():a).join("")
+     
+//      return result
+     
+//  }
+ 
+//  console.log(Upper("shihas"))
