@@ -692,18 +692,42 @@
 
 
 
-//array [1,2,3,4]  n=1
+// //array [1,2,3,4]  n=1
 
-//output like [[1] [2] [3] [4]]
+// //output like [[1] [2] [3] [4]]
 
 
-const arrayFunc=(arr,n)=>{
-  let a=[]
+// const arrayFunc=(arr,n)=>{
+//   let a=[]
   
-  for(let i=0;i<arr.length;i++){
+//   for(let i=0;i<arr.length;i++){
       
-          a.push(arr.slice(i,i+n))
-  }
-  return a
-}
-console.log(arrayFunc([1,2,3,4],1))
+//           a.push(arr.slice(i,i+n))
+//   }
+//   return a
+// }
+// console.log(arrayFunc([1,2,3,4],1))
+
+// //time=0(n)
+// //space=0(n)
+
+
+// Task: Merge Two Sorted Arrays
+
+// Input: [1, 3, 5], [2, 4, 6]
+// Output: [1, 2, 3, 4, 5, 6]
+
+
+  //  const MergeSort=(arr1,arr2)=>{
+      
+  //         const mergedArr=[...arr1,...arr2]
+        
+  //           return mergedArr.sort((a,b)=>a-b)
+  //  }
+
+  //  console.log( MergeSort([1, 3, 5],[2, 4, 6])) 
+
+
+
+
+       
