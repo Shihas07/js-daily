@@ -763,3 +763,21 @@
 // console.log(twoSum([1, 2, 3, 4, 5], 9));
 
 
+// const twoSum = (arr, target) => {
+//   let store = new Set();
+ 
+ 
+//   for (let i = 0; i < arr.length; i++) {
+//     let val = target - arr[i];
+
+//     if (store.has(val)) {
+//       return [arr[i], val];
+//     }
+
+//     store.add(arr[i]);
+//   }
+
+//   return null;
+// };
+
+// console.log(twoSum([1, 2, 3, 4, 5], 9)); // [5, 4]
