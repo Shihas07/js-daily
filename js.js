@@ -674,34 +674,27 @@
 
 // console.log(kadensSum([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
-
-
 // to upperCase one after one
 
-
-
 // const Upper=str=>{
-      
+
 //   const result=str.split("").map((a,b)=>b%2===0?a.toUpperCase():a).join("")
-     
+
 //      return result
-     
+
 //  }
- 
+
 //  console.log(Upper("shihas"))
-
-
 
 // //array [1,2,3,4]  n=1
 
 // //output like [[1] [2] [3] [4]]
 
-
 // const arrayFunc=(arr,n)=>{
 //   let a=[]
-  
+
 //   for(let i=0;i<arr.length;i++){
-      
+
 //           a.push(arr.slice(i,i+n))
 //   }
 //   return a
@@ -711,23 +704,48 @@
 // //time=0(n)
 // //space=0(n)
 
-
 // Task: Merge Two Sorted Arrays
 
 // Input: [1, 3, 5], [2, 4, 6]
 // Output: [1, 2, 3, 4, 5, 6]
 
+//  const MergeSort=(arr1,arr2)=>{
 
-  //  const MergeSort=(arr1,arr2)=>{
-      
-  //         const mergedArr=[...arr1,...arr2]
-        
-  //           return mergedArr.sort((a,b)=>a-b)
-  //  }
+//         const mergedArr=[...arr1,...arr2]
 
-  //  console.log( MergeSort([1, 3, 5],[2, 4, 6])) 
+//           return mergedArr.sort((a,b)=>a-b)
+//  }
+
+//  console.log( MergeSort([1, 3, 5],[2, 4, 6]))
+
+// Task: Move Zeros to the End
+
+// Input: [0, 2, 0, 4, 0, 5, 6]
+// Output: [2, 4, 5, 6, 0, 0, 0]
+
+  
 
 
 
 
-       
+// 5. Longest Palindromic Substring  leetcode 
+
+
+// var longestPalindrome = function(s) {
+//   let longest = "";
+
+//   for (let i = 0; i < s.length; i++) {
+//       for (let j = i + 1; j <= s.length; j++) {
+//           let subStr = s.slice(i, j);
+//           let reversed = subStr.split('').reverse().join(''); 
+          
+//           if (subStr === reversed && subStr.length > longest.length) {
+//               longest = subStr;
+//           }
+//       }
+//   }
+  
+//   return longest;
+// };   answer 1 but time is too long 
+
+
