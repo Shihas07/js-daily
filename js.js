@@ -723,13 +723,7 @@
 // Input: [0, 2, 0, 4, 0, 5, 6]
 // Output: [2, 4, 5, 6, 0, 0, 0]
 
-  
-
-
-
-
-// 5. Longest Palindromic Substring  leetcode 
-
+// 5. Longest Palindromic Substring  leetcode
 
 // var longestPalindrome = function(s) {
 //   let longest = "";
@@ -737,15 +731,35 @@
 //   for (let i = 0; i < s.length; i++) {
 //       for (let j = i + 1; j <= s.length; j++) {
 //           let subStr = s.slice(i, j);
-//           let reversed = subStr.split('').reverse().join(''); 
-          
+//           let reversed = subStr.split('').reverse().join('');
+
 //           if (subStr === reversed && subStr.length > longest.length) {
 //               longest = subStr;
 //           }
 //       }
 //   }
-  
+
 //   return longest;
-// };   answer 1 but time is too long 
+// };   answer 1 but time is too long
+
+
+// // two sum approach
+
+// const twoSum = (arr, target) => {
+//   let store = [];
+//   let val;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     val = target - arr[i];
+
+//     if (store.includes(val)) {
+//       return [arr[i], val];
+//     } else {
+//       store.push(arr[i]);
+//     }
+//   }
+// };
+
+// console.log(twoSum([1, 2, 3, 4, 5], 9));
 
 
