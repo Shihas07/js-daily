@@ -786,3 +786,24 @@
 
 
 ////change this
+
+
+
+
+//unshift created our own method
+  // const arr=[1,2,3,4]
+
+      
+  //     Array.prototype.test=function(value){
+          
+  //           for(i=this.length-1;i>=0;i--){
+  //               this[i+1]=this[i]
+  //           }
+  //           this[0]=value
+  //     }
+
+         
+  //            arr.test(0)
+
+   
+  //      console.log(arr)
