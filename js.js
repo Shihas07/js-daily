@@ -807,3 +807,25 @@
 
    
   //      console.log(arr)
+
+
+  //create our own pop 
+
+
+  //  const arr=[1,2,3,4,5]
+
+  //   Array.prototype.check=function(){
+       
+          
+  //          this.length=this.length-1
+  //   }
+
+  //   arr.check()
+
+  //   console.log(arr)
+
+
+
+   //for loop
+
+  
